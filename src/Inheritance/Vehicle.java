@@ -35,4 +35,16 @@ public class Vehicle {
     public String getSize() {
         return size;
     }
+
+    public int getCurrentVelocity() {
+        return currentVelocity;
+    }
+
+    public int getCurrentDirection() {
+        return currentDirection;
+    }
+
+    public void stop(){
+        this.currentVelocity = 0;
+    }
 }
