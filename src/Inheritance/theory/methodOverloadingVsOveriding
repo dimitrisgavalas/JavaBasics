@@ -1,0 +1,11 @@
+
+
+
+Method Overloading = providing 2+ separate methods in a class with the same name
+                        but different parameters
+                        (method with same name different parameters)
+
+Method Overriding = defining a method in a child class that already exists in the
+                        parent class with same signature.
+                        (add @Override)
+                        (method with same name same parameters)

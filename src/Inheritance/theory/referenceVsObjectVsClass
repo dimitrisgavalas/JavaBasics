@@ -1,0 +1,23 @@
+Analogies
+
+Class = blueprint for a house. With the blueprint we can build many houses
+
+Object = each house you build is an object also known as an instance
+
+Reference = Each house we build has an address. If we want to tell someone
+            where we live we give the our address(ex. on a paper). That is a reference.
+
+            We can copy the reference as many times we like but there is still
+            one object.(ex. copying paper with address on not the house)
+
+            We can pass references as parameters to Constructors and methods
+
+            Example
+            1. House class
+            2. c // creates new instance of the House class
+            3. House = blueprint
+            4. blueHouse = variable
+            5. reference to the same object // House anotherHouse = blueHouse;
+            6. blueHouse + anotherHouse = two papers with address
+            7. House greenHouse = new House("green"); // second object(1st blueHouse).
+                3rd reference(2nd blueHouse, 3rd anotherHouse)
