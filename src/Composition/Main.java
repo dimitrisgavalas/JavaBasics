@@ -16,9 +16,9 @@ public class Main {
 
 //    how do we access drawPixelAt method from Monitor class to PC? The PC has getters but no way of
 //    accessing it
-        thePC.getMonitor().drawPixelAt(1500, 1200, "red");
-        thePC.getMotherboard().loadProgram("Windows 13");
-        thePC.getTheCase().pressPowerButton();
+//        thePC.getMonitor().drawPixelAt(1500, 1200, "red");
+//        thePC.getMotherboard().loadProgram("Windows 13");
+//        thePC.getTheCase().pressPowerButton();
     }
 
 }
