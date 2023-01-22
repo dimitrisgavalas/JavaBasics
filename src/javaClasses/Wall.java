@@ -8,10 +8,6 @@ public class Wall {
         this.height = height < 0 ? 0 : height;
     }
 
-    public Wall() {
-        this(0, 0);
-    }
-
     public double getWidth() {
         return width;
     }
