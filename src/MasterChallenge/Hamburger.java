@@ -16,4 +16,29 @@ public class Hamburger {
         this.price = price;
         this.burgerName = burgerName;
     }
+
+    public void setTomato(boolean tomato) {
+        this.tomato = tomato;
+    }
+
+    public void setKetchup(boolean ketchup) {
+        this.ketchup = ketchup;
+    }
+
+
+
+    public void totalPrice(){
+        System.out.println("Base Burger price = " + this.price);
+        if (tomato){
+            this.price += 1;
+            System.out.println("You added Tomato. Price 1$.");
+        }
+
+        if (ketchup){
+            this.price += 1;
+            System.out.println("You added Ketchup. Price 1$.");
+        }
+
+        System.out.println("Total Price = " + this.price + "$");
+    }
 }
