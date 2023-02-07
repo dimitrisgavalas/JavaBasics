@@ -1,5 +1,6 @@
 package ArrayLists.Challenge;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -59,6 +60,9 @@ public class Main {
         for (int j=0; j< array.length; j++){
             sortedArray[j] = array[j];
         }
+
+        //alternative way to copy array in another one
+//        int sortedArray[] = Arrays.copyOf(array, array.length);
 
         boolean flag = true;
         int temp;
