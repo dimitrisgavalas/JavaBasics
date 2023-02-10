@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
 
     private static Scanner scanner = new Scanner(System.in);
-
+    private static int[] baseData = new int[10];
     public static void main(String[] args) {
 
         int [] myInts = getIntegers(5);
@@ -29,8 +29,6 @@ public class Main {
         System.out.println("Array = " + Arrays.toString(array2));
         reverse(array2);
         System.out.println("Reversed Array = " + Arrays.toString(array2));
-
-
     }
 
     private static int[] getIntegers(int number) {
@@ -87,4 +85,15 @@ public class Main {
             array[maxIndex - i] = temp;
         }
     }
+
+    private static void resizeArray(int[] ogArray){
+
+        ogArray = baseData;
+        baseData = new int[12];
+        for (int i=0; i< ogArray.length; i++){
+            baseData[i] = ogArray[i];
+        }
+    }
+
+
 }
