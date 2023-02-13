@@ -1,4 +1,6 @@
-package ArrayLists;
+package ArrayLists.Array;
+
+import ArrayLists.Lists.GroceryList;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -29,6 +31,11 @@ public class Main {
         System.out.println("Array = " + Arrays.toString(array2));
         reverse(array2);
         System.out.println("Reversed Array = " + Arrays.toString(array2));
+
+
+
+
+
     }
 
     private static int[] getIntegers(int number) {

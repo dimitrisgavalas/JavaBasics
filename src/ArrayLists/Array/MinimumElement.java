@@ -1,4 +1,4 @@
-package ArrayLists;
+package ArrayLists.Array;
 
 import java.util.Scanner;
 public class MinimumElement {
