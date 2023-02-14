@@ -1,6 +1,5 @@
-package ArrayLists.Challenge;
+package ArrayLists.Array.Challenge;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
