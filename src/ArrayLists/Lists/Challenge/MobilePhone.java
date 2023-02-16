@@ -65,39 +65,32 @@ public class MobilePhone {
         return true;
     }
 
+    public boolean removeContact(Contact contact){
+        int foundPosition = findContact(contact);
 
+        if (foundPosition < 0){
+            System.out.println("It doesnt exist in array");
+            System.out.println(contact.getName() + " was not found");
+            return false;
+        }
 
-
-
-
-
-    public void printOptionsAvailable(){
-        System.out.println("0 - Quit");
-        System.out.println("1 - Print Contacts");
-        System.out.println("2 - Add new Contacts");
-        System.out.println("3 - Update Existing Contact");
-        System.out.println("4 - Remove Contact");
-        System.out.println("5 - Search Contact");
-
-    }
-    public void quit(){
-
-    }
-    public void printContacts(){
-        System.out.println();
-    }
-
-
-
-
-    public void removeContact(){}
-
-
-
-
-
-
-    public boolean checkContact(){
+        this.myContacts.remove(foundPosition);
+        System.out.println(contact.getName() + " was deleted");
         return true;
+    }
+
+    public String queryContact(Contact contact){
+        if (findContact(contact) >= 0){
+            return contact.getName();
+        }
+        return null;
+    }
+
+    public void printContacts(){
+        System.out.println("Contact List");
+        for (int i=0; i<this.myContacts.size(); i++){
+            System.out.println((i+1) + "." + this.myContacts.get(i).getName() + " --> " +
+                    this.myContacts.get(i).getPhoneNumber());
+        }
     }
 }
