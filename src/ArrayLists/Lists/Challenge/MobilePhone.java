@@ -93,4 +93,12 @@ public class MobilePhone {
                     this.myContacts.get(i).getPhoneNumber());
         }
     }
+
+    public Contact queryContact(String name){
+        int position = findContact(name);
+        if (position >=0){
+            return this.myContacts.get(position);
+        }
+        return null;
+    }
 }
