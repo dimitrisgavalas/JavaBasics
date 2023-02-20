@@ -21,4 +21,13 @@ public class ToDoList {
         }
     }
 
+    public void modifyList(int position, String newItem){
+        System.out.println("You want to change item: " + toDoList.get(position) + " with item " + newItem + " @ position :" + position);
+        toDoList.set(position, newItem);
+    }
+
+    public int findItem(String item){
+         return toDoList.indexOf(item);
+    }
+
 }

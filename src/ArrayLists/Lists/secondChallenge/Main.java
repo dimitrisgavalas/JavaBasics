@@ -6,18 +6,24 @@ public class Main {
 
     public static void main(String[] args) {
 
-        firstList.addItem("Deez nuts");
+        firstList.addItem("Buy nuts");
         firstList.printArray();
-        firstList.addItem("one nuts");
-        firstList.printArray();
-
-        firstList.addItem("two nuts");
-        firstList.addItem("three nuts");
+        firstList.addItem("Buy bread");
         firstList.printArray();
 
-        firstList.removeItem("Deez nuts");
-//        firstList.printArray();
-//        firstList.printArray();
+        firstList.addItem("eat two nuts");
+        firstList.addItem("eat three nuts");
+        firstList.printArray();
+
+        firstList.removeItem("Buy nuts");
+        System.out.println("\nBuy nuts removed\n");
+        firstList.printArray();
+
+        firstList.modifyList(1, "Buy milk");
+        firstList.printArray();
+
+
+        System.out.println("position of 'Buy milk' is : " + firstList.findItem("Buy milk"));
 
 
 
