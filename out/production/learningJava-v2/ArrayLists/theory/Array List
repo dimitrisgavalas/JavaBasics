@@ -178,3 +178,38 @@ public class Main {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+just to follow up on this and to make it more clear. Remember the method createMovie from polymorphism lesson. That method was returning Movie but inside there were some conditions based on random number so depending on random number it was returning instance of Jaws or Independence Day etc. That was also static method. In case of createMovie method check the 3rd advantage below.
+
+Advantages of static factory method:
+
+One advantage of static factory methods is that, unlike constructors, they have names.
+A second advantage of static factory methods is that, unlike constructors, they are not required to create a new object each time they’re invoked.
+A third advantage of static factory methods is that, unlike constructors, they can return an object of any subtype of their return type.
+Static factory methods may also reduce the verbosity of creating parameterized type instances. If there is a static factory method such as
+
+public static <T> Bucket<T> newInstance() {
+    return new Bucket<T>();
+}
+then it is possible to use
+
+Bucket<Water> myBucket = Bucket.newInstance();
+making the code shorter and clearer (the ability of the compiler to figure out the type T is known as type inference). The improvement is more noticeable for big and complicated parameterized types. Of course, if you can use Java 7 (or a newer version), the diamond operator allows you to omit the redundant parameters.
+
+
+
+Disadvantages of static factory methods
+
+Providing only static factory methods makes it impossible to subclass classes without public or protected constructors. This, however, also encourages programmers to use composition over inheritance, which is good.
+
+Static factory methods are not readily distinguishable from other static methods. Sometimes it may be hard to figure out how to instantiate a class that provides static factory methods instead of public or protected constructors. To solve this problem, it is a good idea to use common names for static factories, such as getInstance, newInstance, getType, createXXX  and newType.
+
+Hope someone finds this helpful.
