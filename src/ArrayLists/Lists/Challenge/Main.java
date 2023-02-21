@@ -9,9 +9,11 @@ public class Main {
     private static MobilePhone mobilePhone = new MobilePhone("0039 330 4404");
 
     public static void main(String[] args) {
+
         boolean quit = false;
         startPhone();
         printActions();
+
         while(!quit){
             System.out.println("ENter your choice: (6 for available actions)");
             int action = scanner.nextInt();
@@ -63,7 +65,7 @@ public class Main {
 
     private static void updateContact(){
         System.out.println("Enter existing contact name: ");
-        String name= scanner.nextLine();
+        String name = scanner.nextLine();
 //        pass name return record
         Contact existingContactRecord = mobilePhone.queryContact(name);
         if (existingContactRecord == null){

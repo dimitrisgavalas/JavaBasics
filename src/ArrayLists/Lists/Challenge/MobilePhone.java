@@ -57,6 +57,10 @@ public class MobilePhone {
             System.out.println("It doesnt exist in array");
             System.out.println(oldContact.getName() + " was not found");
             return false;
+        } else if(findContact(newContact.getName()) != -1) {
+            System.out.println("Contact with name " + newContact.getName() +
+                    " already exists. Update was not successful.");
+            return false;
         }
 
         System.out.println("It exist in array");
