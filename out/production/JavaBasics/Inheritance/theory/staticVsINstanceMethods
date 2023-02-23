@@ -1,0 +1,16 @@
+
+
+static Methods = 1. declared using static modifier
+                 2. cant access instance methods/variables directly
+                 3. used for operations that don't require any data from instance of the class
+                 4. cant use this keyword
+                 5. Dont require in stance to be created(ex. dont need--> className name = new className();)
+
+Instance Methods = 1. belongs to an instance of a class
+                   2. to use first we have to instantiate the class first by using new keyword
+                   3. can access methods/variables directly
+
+
+How to choose?
+            - If it uses fields or instance methods --> Instance Methods
+            - If not --> static Methods

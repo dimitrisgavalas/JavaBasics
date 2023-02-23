@@ -1,0 +1,7 @@
+
+static Variables = 1. declared using static keyword
+                   2. rare use
+                   (me className.methodName)
+
+Instance Variables = 1. belong to a specific instance of a class
+                     2. (me this.methodName)
