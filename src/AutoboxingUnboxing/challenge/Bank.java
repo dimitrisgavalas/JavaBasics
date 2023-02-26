@@ -4,5 +4,5 @@ import java.util.ArrayList;
 
 public class Bank {
 
-    ArrayList<Branches> branches = new ArrayList<Branches>();
+    ArrayList<Branch> branches = new ArrayList<Branch>();
 }

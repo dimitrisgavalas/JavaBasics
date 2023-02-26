@@ -1,0 +1,49 @@
+Can you explain autoboxing and unboxing in java like im 5 years old
+
+Imagine you have a toy car that you want to put into a box so you can carry it around.
+Autoboxing is when you take the toy car and put it into a special box that can hold both
+ the car and the box itself. In Java, this is like when you take a primitive data type
+ (like an int or a boolean) and put it into an object (like an Integer or a Boolean).
+
+Now, let's say you want to take the toy car out of the box and play with it. Unboxing
+is when you open up the box and take the toy car out. In Java, this is like when you
+take an object (like an Integer or a Boolean) and extract the primitive data type
+that's inside (like an int or a boolean).
+
+So, autoboxing is like putting a toy car into a box that can hold both the car and
+the box, and unboxing is like taking the car out of the box so you can play with it.
+ In Java, autoboxing is when you put a primitive data type into an object, and unboxing
+  is when you extract the primitive data type from an object.
+
+
+
+
+why do we need to do autoboxing and unboxing in applications?
+
+In Java, there are some situations where we need to use objects instead of
+ primitive data types. For example, when we want to store data in a collection
+  (like an ArrayList or a HashMap), we can't use primitive data types directly
+   because collections can only hold objects.
+
+That's where autoboxing comes in. Autoboxing lets us easily convert a primitive
+ data type into an object, so we can store it in a collection. For example, if
+ we have an ArrayList of Integers, we can add an int value to the list and Java
+  will automatically convert it into an Integer object for us.
+
+Unboxing is also useful because sometimes we need to use primitive data types
+instead of objects. For example, if we're doing some math calculations, we might
+want to use primitive data types because they're faster and more efficient.
+Unboxing lets us easily extract the primitive data type from an object so we
+can use it in our calculations.
+
+So, autoboxing and unboxing are useful because they let us work with both primitive
+ data types and objects in a flexible and convenient way, depending on what we need
+  to do in our application.
+
+
+
+
+
+
+
+
