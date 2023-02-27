@@ -7,13 +7,17 @@ public class Branch {
     private String branchName;
     private ArrayList<Customer> customers;
 
-    public Branch(String branchName, ArrayList<Customer> customers) {
+    public Branch(String branchName) {
         this.branchName = branchName;
         this.customers = new ArrayList<Customer>();
     }
 
     public String getBranchName() {
         return branchName;
+    }
+
+    public ArrayList<Customer> getCustomers() {
+        return customers;
     }
 
     public boolean newCustomer(String customerName, double initialAmount){
