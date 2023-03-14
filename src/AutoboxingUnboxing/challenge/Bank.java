@@ -1,7 +1,9 @@
 package AutoboxingUnboxing.challenge;
 
 import java.util.ArrayList;
-
+/**
+ * Created by Dimitrios Gavalas on 14/03/23
+ * */
 public class Bank {
 
     private String name;
@@ -9,7 +11,7 @@ public class Bank {
 
     public Bank(String name) {
         this.name = name;
-        branches = new ArrayList<Branch>();
+        this.branches = new ArrayList<Branch>();
     }
 
 //    testing to see whether the branch exists.

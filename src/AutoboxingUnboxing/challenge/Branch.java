@@ -39,12 +39,12 @@ public class Branch {
         return false;
     }
 
-//    private because its only used internaly
+//    private because its only used internally
     private Customer findCustomer(String customerName){
         for (int i=0; i<this.customers.size(); i++){
             Customer checkedCustomer = this.customers.get(i);
             if (checkedCustomer.getCustomerName().equals(customerName)){
-                return this.customers.get(i);
+                return checkedCustomer;
             }
         }
         return null;
