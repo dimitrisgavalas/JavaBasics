@@ -1,0 +1,2 @@
+java will actually allocate four bytes of memory, for each integer.
+Because it needs up to that amount to be able to store the highest value integer,
