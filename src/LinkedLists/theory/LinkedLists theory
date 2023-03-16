@@ -1,2 +1,5 @@
 java will actually allocate four bytes of memory, for each integer.
 Because it needs up to that amount to be able to store the highest value integer,
+
+When  in a LL nothing is referring to an object Java will automatically destroy
+during its garbage collection
